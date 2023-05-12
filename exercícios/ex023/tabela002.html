@@ -15,9 +15,16 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
-        tbody>tr:nth-child(2n){
+        thead>tr>th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody>tr:nth-child(2n) {
             background-color: lightgray;
         }
 
@@ -211,6 +218,8 @@
             <td><strong>210.147.125</strong></td>
         </tfoot>
     </table>
+
+
 </body>
 
 </html>
